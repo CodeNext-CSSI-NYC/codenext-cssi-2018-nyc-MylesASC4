@@ -1,7 +1,7 @@
 // Myles Nutifafa
 var input = require("readline-sync")
 console.log("WELCOME TO THE SUPA EASTER PREDICTAAH")
-let y = parseInt(input.question(" Give me any year after 1583; "));
+let y = parseInt(input.question(" Give me any year after 1583; /n "));
 let a = y % 19;
 let b = Math.floor(y / 100);
 let c = y % 100;
