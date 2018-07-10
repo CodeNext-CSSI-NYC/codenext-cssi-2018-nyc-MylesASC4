@@ -1,7 +1,7 @@
 var readline = require("readline-sync")
 
 let name = readline.question("Whats your name homie? :")
-console.log("Whats poppin big Homie: " + name)
+console.log("Whats poppin big homie " + name)
 // Author: Myles  LastName
 // console.log("Jello, World");console.log("It's a beautiful day for programming, isn't it?");
 // console.log("Hey! What's 2 + 2 ?");
