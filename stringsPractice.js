@@ -48,7 +48,7 @@ let secTo = last2.charAt(0)
 let last = last2.charAt(1)
 
 console.log(word,secTo,last)
-return secTo,last
+return 
 }
 function typo(word){
     lastTwo(word)
