@@ -41,31 +41,27 @@ for(i = 0; i < 7; i++){
 
 // 2. Try to figure out how to draw a "border" pattern:
 
-// function border(){
-//     let header = ""
-//     let margins = ""
+function border(){
+    let num = 9
+    for( let row = 0; row < num ; row++){
+        pattern = ""
+        for(let col = 0; col < num; col++){
+                if( row == 0 || col == 0 || row == num - 1|| col == num - 1){
+         pattern += "X"   
+        }
+        else{
+            pattern += "-"
+        }
+    }
 
-//     for(i = 0; i < 9; i++){
-//         while(  j < 8){
-//             for( j = 0; j <= 8; j++){
-//                 header += "X"
-//             }
-//             console.log(header)
-//         }
-//         while(i < 6){
-//         if(i == 0 || i == 8){
-//             margins += "X"
-//         }
-//         else{
-//             margins += "-"
-//         }
-//     }
-//     }
-//     console.log(margins)
-    
-// }
+    console.log(pattern)
+   }
+}
+
+
 
 border()
+
 // XXXXXXXX
 // X------X
 // X------X

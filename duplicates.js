@@ -8,24 +8,26 @@
 
 // Get a basic version of this working. You should return true if there is at least one duplicated value.
 function hasDuplicate(arr) {
-    for( i = 0; i < arr.length; i++){
-        original = []
-        duplicates = []
-        item = arr[i]
-        if(arr.includes(item)){
-            original.push(item)
-            if( duplicates.includes(item)){
+    let = duplicates = []
+    
+    arr.sort()
+    for( i = 0; i < arr.length ; i++){
+        let item =  arr[i]
+        
+        original.push(item)
+        if( item ){
                 
             }
         }
+        console.log( original, "has a duplicate of,", duplicates)
     }
-    console.log( arr, "has a duplicate of,", duplicates)
 
-}
+
 let arr1 = [3,4,5,6,7,1,2,5,9];
 let arr2 = ["apple", "banana", "pear", "banana"];
 // Here are some examples you can use to test
 hasDuplicate(arr1)
+hasDuplicate(arr2)
 // Also make some examples where the answer is false
 
 
