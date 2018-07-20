@@ -1,5 +1,6 @@
 //Myles 
 let randomInt = require('random-int')
+let user = require('readline-sync')
 
 // 1. Refer to the 2D array below to answer the questions that follow
 let fruits = [
@@ -76,6 +77,7 @@ function threeRandomFrames(){
 }
     console.log(threeFrames)
 }
+console.log("Lets Play Warframe!\n", "Heres a few starters for you")
 threeRandomFrames()
   
   // 5. Write a function that takes in a 2D - array and a string as input.

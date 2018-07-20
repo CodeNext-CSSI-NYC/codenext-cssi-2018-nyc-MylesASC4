@@ -1,5 +1,5 @@
-//Myles Nutifafalet 
-fs = require('fs');
+//Myles Nutifafa
+let fs = require('fs');
 const words = fs.readFileSync('words.txt').toString().split("\n");
 let readline = require('readline-sync');
 let randomInt = require('random-int');
@@ -14,7 +14,7 @@ let randomInt = require('random-int');
 
 
 
-// 1. Write a function that takes in a number and then returns a string that
+// 1. Write a function that takes in a number and then returns a string that                    DONE
 // looks like: "7 is odd" (or even if the number is even).
 function evenOdd(num) {
 let userNum = readline.questionInt("Give me a number")
@@ -29,12 +29,12 @@ else{
 // evenOdd()
 // For example, if they type in 7 it would return: "7 is odd".
 // If your function is correct, these should both print true.
-// console.log(evenOdd(7) == "7 is odd");
-// console.log(evenOdd(0) == "0 is even");
+// console.log(evenOdd(7) == "7 is odd");                           
+// console.log(evenOdd(0) == "0 is even");                          
 
 
 
-// 2. Write a function that takes in a number and returns the sum of all the numbers
+// 2. Write a function that takes in a number and returns the sum of all the numbers           DONE
 // from 1 to num.
 function sumUpTo(num) {
     let sum = 0  
@@ -96,19 +96,20 @@ function lastTime(arr, num) {
 
 
 
-// 5. Use a for loop and multiplication to create a function that calculates
+// 5. Use a for loop and multiplication to create a function that calculates                    DONE    
 // exponents for you (and returns the answer).
 // Do NOT use the exponent operation **, that defeats the whole point of the exercise.
 function powers(base, exponent) {
   let result = 1;
-  for( i = 0; i <= exponent; i++){
-    result = base * exponent
+  for( i = 0; i < exponent; i++){
+    result *= base
   }
   console.log(result)
   return result
   // multiplication and store the answer back in result.
 }
-powers(2,5)
+// powers(2,5)
+// powers(12,2)
 // If your function is correct, these should print true.
 // console.log(powers(2, 5) == 32);
 // console.log(powers(3, 4) == 81);
@@ -159,28 +160,34 @@ function startAndEndWith(letter) {
 
 
 
-// 9. Write a function that takes in a number and returns the factorial of that number.
+// 9. Write a function that takes in a number and returns the factorial of that number.             DONE
 // More info: https://www.mathsisfun.com/numbers/factorial.html
 // Use a for loop. Do not try to use the factorial symbol (!), it does not mean that in coding.
 function factorial(num) {
-
+    let finalFactor
+    for (i = num; i <= 1; i--){
+        finalFactor = num * (i - 1)
+    }
+    console.log(finalFactor)
+    return finalFactor
 }
+factorial(5)
 // These should all print true when you are done.
 // console.log(factorial(5) == 120);
 // console.log(factorial(1) == 1);
 
 
 
-// 10. Write a function that takes in a number and returns an array that adds that many
+// 10. Write a function that takes in a number and returns an array that adds that many             DONE
 // Fibonacci numbers to the starting array of [0, 1].
 // More info: https://www.mathsisfun.com/numbers/fibonacci-sequence.html
 // Use a for loop.
 // For example, if you call fibonacci(3), that means we want to add three numbers
 // onto that array, so the return value should be the array [0, 1, 1, 2, 3]
 function fibonacci(num) {
+    arr.push((arr[i] + arr[ i -1]))
   let arr = [0, 1]; // This is the starter array that you will add numbers to
     for( i = 1; i <= num; i++){
-    arr.push((arr[i] + arr[ i -1]))
     }
     console.log(arr)
   return arr;
@@ -193,7 +200,7 @@ function fibonacci(num) {
 
 
 
-// 11. Write a function that takes in an object called coins (see example below) and
+// 11. Write a function that takes in an object called coins (see example below) and                DONE
 // returns the amount of money those coins represent in dollars.
 function countMoney(coins) {
     let quarterVal = .25*coins.quarters
